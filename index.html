@@ -48,74 +48,62 @@
     </section>
 
     <section id="pricing" class="pricing">
-        <h2>Subscription Plans</h2>
-        <div class="pricing-grid">
-            <div class="pricing-card">
-                <h3>Trial</h3>
-                <p class="price">FREE</p>
-                <p class="duration">3 Days</p>
-                <ul>
-                    <li>Full Access</li>
-                    <li>All Features</li>
-                    <li>24/7 Support</li>
-                </ul>
-                <a href="#" class="subscribe-button">Start Trial</a>
-            </div>
-            <div class="pricing-card">
-                <h3>Weekly</h3>
-                <p class="price">$4.99</p>
-                <p class="duration">7 Days</p>
-                <ul>
-                    <li>Full Access</li>
-                    <li>Priority Support</li>
-                    <li>Advanced Analytics</li>
-                </ul>
-                <a href="#" class="subscribe-button">Subscribe</a>
-            </div>
-            <div class="pricing-card featured">
-                <h3>Monthly</h3>
-                <p class="price">$14.99</p>
-                <p class="duration">30 Days</p>
-                <ul>
-                    <li>Best Value</li>
-                    <li>Premium Support</li>
-                    <li>Custom Alerts</li>
-                </ul>
-                <a href="#" class="subscribe-button">Subscribe</a>
-            </div>
-            <div class="pricing-card">
-                <h3>Quarterly</h3>
-                <p class="price">$39.99</p>
-                <p class="duration">90 Days</p>
-                <ul>
-                    <li>All Features</li>
-                    <li>VIP Support</li>
-                    <li>Priority Updates</li>
-                </ul>
-                <a href="#" class="subscribe-button">Subscribe</a>
+    <div class="pricing-header">
+        <h2>Choose Your Plan</h2>
+        <p>Start automating your Gameflip profits today</p>
+    </div>
+    
+    <div class="trial-panel">
+        <div class="trial-content">
+            <h3>FREE TRIAL</h3>
+            <p class="price">3 DAYS FREE ACCESS</p>
+            <button class="trial-button">Start Your Free Trial Now</button>
+        </div>
+    </div>
+
+    <div class="subscription-panels">
+        <div class="sub-panel">
+            <div class="panel-header">WEEKLY</div>
+            <div class="panel-price">$4.99</div>
+            <div class="panel-duration">7 Days</div>
+            <button class="subscribe-button">Subscribe Now</button>
+        </div>
+        
+        <div class="sub-panel featured">
+            <div class="panel-header">MONTHLY</div>
+            <div class="panel-price">$14.99</div>
+            <div class="panel-duration">30 Days</div>
+            <button class="subscribe-button">Best Value</button>
+        </div>
+        
+        <div class="sub-panel">
+            <div class="panel-header">QUARTERLY</div>
+            <div class="panel-price">$39.99</div>
+            <div class="panel-duration">90 Days</div>
+            <button class="subscribe-button">Subscribe Now</button>
+        </div>
+    </div>
+</section>
+
+<section id="settings" class="settings">
+    <h2>API Configuration</h2>
+    <div class="api-container">
+        <div class="api-input-group">
+            <label for="api-key">API KEY</label>
+            <div class="input-wrapper">
+                <input type="password" id="api-key" placeholder="Enter your Gameflip API Key">
+                <button class="toggle-visibility"><i class="fas fa-eye"></i></button>
             </div>
         </div>
-    </section>
-
-    <section id="settings" class="settings">
-        <h2>API Settings</h2>
-        <div class="settings-container">
-            <div class="api-form">
-                <div class="input-group">
-                    <label for="api-key">API Key</label>
-                    <input type="password" id="api-key" placeholder="Enter your Gameflip API Key">
-                </div>
-                <div class="input-group">
-                    <label for="api-secret">API Secret</label>
-                    <input type="password" id="api-secret" placeholder="Enter your Gameflip API Secret">
-                </div>
-                <button class="save-button">Save Settings</button>
+        
+        <div class="api-input-group">
+            <label for="api-secret">API SECRET</label>
+            <div class="input-wrapper">
+                <input type="password" id="api-secret" placeholder="Enter your Gameflip API Secret">
+                <button class="toggle-visibility"><i class="fas fa-eye"></i></button>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <p>© 2024 Gameflip Autoflipper Pro | The Ultimate Flipping Tool</p>
-    </footer>
-</body>
-</html>
+        
+        <button class="save-api-button">SAVE CONFIGURATION</button>
+    </div>
+</section>
