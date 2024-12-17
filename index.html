@@ -3,81 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Portfolio</title>
+    <title>Gameflip Autoflipper Pro</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav>
-        <div class="logo">PORTFOLIO</div>
+        <div class="logo">GAMEFLIP AUTOFLIPPER</div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#settings">Settings</a></li>
         </ul>
     </nav>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Creative Developer</h1>
-            <p>Turning Ideas Into Digital Reality</p>
-            <a href="#contact" class="cta-button">Let's Connect</a>
+            <h1>Automate Your Gameflip Profits</h1>
+            <p>24/7 Automated Flipping | Instant Notifications | Maximum Profits</p>
+            <a href="#pricing" class="cta-button">Start Free Trial</a>
         </div>
     </section>
 
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <p>Full-stack developer crafting exceptional digital experiences through clean code and innovative solutions.</p>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <h2>Featured Work</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Project Alpha</h3>
-                <p>Full-stack web application</p>
-                <div class="tech-stack">
-                    <span>React</span>
-                    <span>Node.js</span>
-                    <span>MongoDB</span>
-                </div>
+    <section id="features" class="features">
+        <h2>Premium Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-robot"></i>
+                <h3>24/7 Automation</h3>
+                <p>Never miss a profitable flip with our automated system</p>
             </div>
-            <div class="project-card">
-                <h3>Project Beta</h3>
-                <p>Mobile-first design system</p>
-                <div class="tech-stack">
-                    <span>Vue.js</span>
-                    <span>Firebase</span>
-                    <span>SCSS</span>
-                </div>
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Lightning Fast</h3>
+                <p>Be the first to catch deals with our optimized algorithm</p>
             </div>
-            <div class="project-card">
-                <h3>Project Gamma</h3>
-                <p>E-commerce platform</p>
-                <div class="tech-stack">
-                    <span>Next.js</span>
-                    <span>GraphQL</span>
-                    <span>AWS</span>
-                </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Profit Tracking</h3>
+                <p>Real-time analytics and profit monitoring</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Connect With Me</h2>
-        <div class="social-links">
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
+    <section id="pricing" class="pricing">
+        <h2>Subscription Plans</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Trial</h3>
+                <p class="price">FREE</p>
+                <p class="duration">3 Days</p>
+                <ul>
+                    <li>Full Access</li>
+                    <li>All Features</li>
+                    <li>24/7 Support</li>
+                </ul>
+                <a href="#" class="subscribe-button">Start Trial</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Weekly</h3>
+                <p class="price">$4.99</p>
+                <p class="duration">7 Days</p>
+                <ul>
+                    <li>Full Access</li>
+                    <li>Priority Support</li>
+                    <li>Advanced Analytics</li>
+                </ul>
+                <a href="#" class="subscribe-button">Subscribe</a>
+            </div>
+            <div class="pricing-card featured">
+                <h3>Monthly</h3>
+                <p class="price">$14.99</p>
+                <p class="duration">30 Days</p>
+                <ul>
+                    <li>Best Value</li>
+                    <li>Premium Support</li>
+                    <li>Custom Alerts</li>
+                </ul>
+                <a href="#" class="subscribe-button">Subscribe</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Quarterly</h3>
+                <p class="price">$39.99</p>
+                <p class="duration">90 Days</p>
+                <ul>
+                    <li>All Features</li>
+                    <li>VIP Support</li>
+                    <li>Priority Updates</li>
+                </ul>
+                <a href="#" class="subscribe-button">Subscribe</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="settings" class="settings">
+        <h2>API Settings</h2>
+        <div class="settings-container">
+            <div class="api-form">
+                <div class="input-group">
+                    <label for="api-key">API Key</label>
+                    <input type="password" id="api-key" placeholder="Enter your Gameflip API Key">
+                </div>
+                <div class="input-group">
+                    <label for="api-secret">API Secret</label>
+                    <input type="password" id="api-secret" placeholder="Enter your Gameflip API Secret">
+                </div>
+                <button class="save-button">Save Settings</button>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2024 | Designed & Built with passion</p>
+        <p>© 2024 Gameflip Autoflipper Pro | The Ultimate Flipping Tool</p>
     </footer>
 </body>
 </html>
