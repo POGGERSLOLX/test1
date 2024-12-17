@@ -6,85 +6,116 @@
     <title>Gameflip Autoflipper Pro</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="nav-dots">
-        <div class="nav-dot active" data-page="0"></div>
-        <div class="nav-dot" data-page="1"></div>
-        <div class="nav-dot" data-page="2"></div>
-        <div class="nav-dot" data-page="3"></div>
-        <div class="nav-dot" data-page="4"></div>
-        <div class="nav-dot" data-page="5"></div>
-    </div>
+    <nav>
+        <div class="logo">GAMEFLIP AUTOFLIPPER</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+    </nav>
 
-    <div class="page-container">
-        <!-- Home Page -->
-        <section class="page" id="home">
-            <div class="hero-content">
-                <h1 class="clickable">Gameflip Autoflipper Pro</h1>
-                <div class="action-buttons">
-                    <button class="clickable">Start Flipping</button>
-                    <button class="clickable">View Tutorial</button>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Automate Your Gameflip Profits</h1>
+            <p>24/7 Automated Flipping | Instant Notifications | Maximum Profits</p>
+            <a href="#pricing" class="cta-button">Start Free Trial</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Premium Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-robot"></i>
+                <h3>24/7 Automation</h3>
+                <p>Never miss a profitable flip with our automated system</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Lightning Fast</h3>
+                <p>Be the first to catch deals with our optimized algorithm</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Profit Tracking</h3>
+                <p>Real-time analytics and profit monitoring</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <h2>Subscription Plans</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Trial</h3>
+                <p class="price">FREE</p>
+                <p class="duration">3 Days</p>
+                <ul>
+                    <li>Full Access</li>
+                    <li>All Features</li>
+                    <li>24/7 Support</li>
+                </ul>
+                <a href="#" class="subscribe-button">Start Trial</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Weekly</h3>
+                <p class="price">$4.99</p>
+                <p class="duration">7 Days</p>
+                <ul>
+                    <li>Full Access</li>
+                    <li>Priority Support</li>
+                    <li>Advanced Analytics</li>
+                </ul>
+                <a href="#" class="subscribe-button">Subscribe</a>
+            </div>
+            <div class="pricing-card featured">
+                <h3>Monthly</h3>
+                <p class="price">$14.99</p>
+                <p class="duration">30 Days</p>
+                <ul>
+                    <li>Best Value</li>
+                    <li>Premium Support</li>
+                    <li>Custom Alerts</li>
+                </ul>
+                <a href="#" class="subscribe-button">Subscribe</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Quarterly</h3>
+                <p class="price">$39.99</p>
+                <p class="duration">90 Days</p>
+                <ul>
+                    <li>All Features</li>
+                    <li>VIP Support</li>
+                    <li>Priority Updates</li>
+                </ul>
+                <a href="#" class="subscribe-button">Subscribe</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="settings" class="settings">
+        <h2>API Settings</h2>
+        <div class="settings-container">
+            <div class="api-form">
+                <div class="input-group">
+                    <label for="api-key">API Key</label>
+                    <input type="password" id="api-key" placeholder="Enter your Gameflip API Key">
                 </div>
+                <div class="input-group">
+                    <label for="api-secret">API Secret</label>
+                    <input type="password" id="api-secret" placeholder="Enter your Gameflip API Secret">
+                </div>
+                <button class="save-button">Save Settings</button>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Dashboard Page -->
-        <section class="page" id="dashboard">
-            <h2>Your Dashboard</h2>
-            <div class="stats-grid">
-                <div class="clickable">Total Profit: $1,234</div>
-                <div class="clickable">Active Flips: 23</div>
-                <div class="clickable">Success Rate: 98%</div>
-            </div>
-        </section>
-
-        <!-- Pricing Page -->
-        <section class="page" id="pricing">
-            <div class="pricing-grid">
-                <!-- [Previous pricing cards with added clickable class] -->
-            </div>
-        </section>
-
-        <!-- Settings Page -->
-        <section class="page" id="settings">
-            <div class="settings-container">
-                <button class="clickable">Configure API</button>
-                <button class="clickable">Bot Settings</button>
-                <button class="clickable">Notification Setup</button>
-            </div>
-        </section>
-
-        <!-- Statistics Page -->
-        <section class="page" id="statistics">
-            <div class="stats-container">
-                <button class="clickable">Weekly Report</button>
-                <button class="clickable">Monthly Analysis</button>
-                <button class="clickable">Export Data</button>
-            </div>
-        </section>
-
-        <!-- Support Page -->
-        <section class="page" id="support">
-            <div class="support-container">
-                <button class="clickable">Live Chat</button>
-                <button class="clickable">Documentation</button>
-                <button class="clickable">FAQ</button>
-            </div>
-        </section>
-    </div>
-
-    <script>
-        // Horizontal scrolling navigation
-        document.querySelectorAll('.nav-dot').forEach(dot => {
-            dot.addEventListener('click', () => {
-                const page = dot.dataset.page;
-                document.querySelector('.page-container').style.transform = `translateX(-${page * 100}vw)`;
-                document.querySelectorAll('.nav-dot').forEach(d => d.classList.remove('active'));
-                dot.classList.add('active');
-            });
-        });
-    </script>
+    <footer>
+        <p>© 2024 Gameflip Autoflipper Pro | The Ultimate Flipping Tool</p>
+    </footer>
 </body>
 </html>
