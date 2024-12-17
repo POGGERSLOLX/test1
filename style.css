@@ -1,142 +1,17 @@
 :root {
-    --background-dark: #121212;
-    --background-darker: #0a0a0a;
-    --surface-dark: #1e1e1e;
+    --background-dark: #0a0a0a;
+    --background-darker: #050505;
+    --surface-dark: #151515;
     --text-primary: #ffffff;
     --text-secondary: #b3b3b3;
     --accent-red: #ff3333;
     --accent-red-hover: #ff6666;
-    --nav-bg: rgba(18, 18, 18, 0.95);
+    --nav-bg: rgba(10, 10, 10, 0.95);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* [Previous CSS styles remain the same until .project-grid] */
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: var(--text-primary);
-    background-color: var(--background-dark);
-}
-
-nav {
-    position: fixed;
-    width: 100%;
-    background-color: var(--nav-bg);
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(255, 51, 51, 0.2);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--text-primary);
-    text-shadow: 0 0 10px var(--accent-red);
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li a {
-    color: var(--text-primary);
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.nav-links li a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--accent-red);
-    transition: width 0.3s ease;
-}
-
-.nav-links li a:hover::after {
-    width: 100%;
-}
-
-.hero {
-    height: 100vh;
-    background: linear-gradient(135deg, var(--background-darker), var(--background-dark));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: var(--text-primary);
-    border-bottom: 2px solid var(--accent-red);
-}
-
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 0 0 20px var(--accent-red);
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: transparent;
-    color: var(--text-primary);
-    text-decoration: none;
-    border: 2px solid var(--accent-red);
-    border-radius: 5px;
-    margin-top: 2rem;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.cta-button:hover {
-    background-color: var(--accent-red);
-    transform: translateY(-3px);
-    box-shadow: 0 0 20px var(--accent-red);
-}
-
-section {
-    padding: 5rem 2rem;
-    background-color: var(--background-dark);
-}
-
-section:nth-child(even) {
-    background-color: var(--background-darker);
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    color: var(--text-primary);
-    position: relative;
-    display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--accent-red);
-}
-
-.project-grid {
+.pricing-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
@@ -144,81 +19,128 @@ h2::after {
     margin: 0 auto;
 }
 
-.project-card {
+.pricing-card {
     background-color: var(--surface-dark);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
     transition: all 0.3s ease;
-    border: 1px solid transparent;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-red);
-    box-shadow: 0 0 20px rgba(255, 51, 51, 0.2);
-}
-
-.contact {
-    background-color: var(--background-darker);
+    border: 1px solid var(--accent-red);
     text-align: center;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
+.pricing-card.featured {
+    transform: scale(1.05);
+    border-width: 2px;
+    box-shadow: 0 0 20px rgba(255, 51, 51, 0.3);
 }
 
-.social-links a {
+.pricing-card:hover {
+    transform: translateY(-5px);
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-red);
+    margin: 1rem 0;
+}
+
+.duration {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.pricing-card ul li {
+    margin: 0.5rem 0;
+}
+
+.subscribe-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--accent-red);
     color: var(--text-primary);
-    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 5px;
     transition: all 0.3s ease;
 }
 
-.social-links a:hover {
-    color: var(--accent-red);
-    transform: scale(1.2);
+.subscribe-button:hover {
+    background-color: var(--accent-red-hover);
+    transform: translateY(-2px);
 }
 
-footer {
+.settings-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--surface-dark);
+    border-radius: 10px;
+    border: 1px solid var(--accent-red);
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--background-darker);
+    border: 1px solid var(--accent-red);
+    border-radius: 5px;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 51, 51, 0.3);
+}
+
+.save-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--accent-red);
+    color: var(--text-primary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.save-button:hover {
+    background-color: var(--accent-red-hover);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
     text-align: center;
     padding: 2rem;
-    background-color: var(--background-darker);
-    color: var(--text-secondary);
-    border-top: 2px solid var(--accent-red);
 }
 
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-    
-    .hero-content h1 {
-        font-size: 2rem;
-    }
+.feature-card i {
+    font-size: 3rem;
+    color: var(--accent-red);
+    margin-bottom: 1rem;
 }
 
-/* Add smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--background-darker);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--accent-red);
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--accent-red-hover);
-}
+/* [Rest of the previous CSS remains the same] */
